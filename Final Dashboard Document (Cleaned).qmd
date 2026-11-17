@@ -34,11 +34,11 @@ There are also some limitations and ethical considerations when working with the
 ::: card
 ## Data Context
 
-![](images/clipboard-1814849386.webp)
+![](./billboard.png)
 
-**Billboard Hot 100 #1 Songs**
+### Billboard Hot 100 #1 Songs
 
-Dataset Source & Link: <https://www.billboard.com/charts/hot-100/>
+Dataset Source & Link: <https://docs.google.com/spreadsheets/d/1j1AUgtMnjpFTz54UdXgCKZ1i4bNxFjf01ImJ-BqBEt0/edit?gid=1974823090#gid=1974823090>
 
 Creator: Chris Dalla Riva, compiled in the book Uncharted Territory (2025)
 
@@ -48,7 +48,7 @@ Billboard determines the number one songs based on a mix of streaming, radio pla
 
 After cleaning, the Rock dataset contains 463 rows. The dataset is U.S.-specific, so it reflects American listening habits rather than global trends. The main advantage of this sample is that it shows the biggest hits consistently over decades, but it leaves out songs that didn’t reach number one, which could overlook niche or emerging trends.
 
-**Political Polarization Score (V-Dem / Our World in Data)**
+### Political Polarization Score (V-Dem / Our World in Data)
 
 Dataset Source & Link: <https://archive.ourworldindata.org/20260204-165456/grapher/political-polarization-score.html>
 
@@ -79,8 +79,8 @@ library(patchwork)
 library(plotly)
 library(DT)
 
-billboard_hot_100_number_ones_df <-read.csv("~/Documents/INFO 201/Final Project/Billboard Hot 100 Number Ones Database - Data.csv")
-polarization_score_df <- read.csv("~/Documents/INFO 201/Final Project/political-polarization-score.csv")
+billboard_hot_100_number_ones_df <-read.csv("./Billboard Hot 100 Number Ones Database - Data.csv")
+polarization_score_df <- read.csv("./political-polarization-score.csv")
 ```
 
 Here we load our necessary libraries and the data sets that we will be working with.
